@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMK Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fade-in">
+    	<img src="images/ymk-logo.webp" alt="YMK Logo" class="logo">
+        <h1>Welcome to YMK Real Estate</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="houses.html">Houses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero slide-in">
+        <div class="hero-text">
+            <h2>Find Your Dream Home Today</h2>
+            <p>Browse our listings to find the perfect home for you and your family.</p>
+            <input type="text" placeholder="Search for a house..." id="searchBar">
+            <button onclick="searchHouses()">Search</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Listings</h2>
+        <div class="house-grid">
+            <div class="house">
+                <img src="images/house 1.jpeg" alt="House 1">
+                <h3>Cozy Family Home</h3>
+                <p>2,500,000birr</p>
+            </div>
+            <div class="house">
+                <img src="images/house 2.jpeg" alt="House 2">
+                <h3>Luxury Villa</h3>
+                <p>7,500,000birr</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dream Homes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

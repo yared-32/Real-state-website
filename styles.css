@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #00B491;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: #ff6600;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:  black;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero input {
+    padding: 12px;
+    width: 350px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.hero button {
+    padding: 12px 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #e65c00;
+}
+
+/* Featured Houses */
+.featured {
+    text-align: center;
+    padding: 50px;
+    background: #F3FFE7;
+}
+
+.house-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.house {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.house:hover {
+    transform: translateY(-5px);
+}
+
+.house img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.house h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.house p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.house button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.house button:hover {
+    background: #e65c00;
+}
+
+/* Contact Page */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: #C2C7BC;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #e65c00;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Logo */
+.logo {
+    height: 60px;
+    display: block;
+    margin: 10px auto;
+    float: left;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.about-content ul li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-content ul li strong {
+    color: #333;
+}
+.conco a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	}
